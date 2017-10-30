@@ -8,6 +8,11 @@
 		
 		int faceValue;
 		
+		Card()
+		{
+			
+		}
+		
 		Card(String s, int fv)
 		{
 			setSuit(s);
@@ -38,5 +43,11 @@
 			return faceValue;			
 		}
 		
+		void print()
+		{
+			System.out.print(faceValue());
+			System.out.print("of");
+			System.out.println(getSuit());
+		}
 		
 	}
